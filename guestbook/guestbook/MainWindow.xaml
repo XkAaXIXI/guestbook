@@ -1,0 +1,101 @@
+﻿<Window x:Class="guestbook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:guestbook"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="537.5" Width="630.66">
+    <Grid Margin="0,0,0,-20">
+        <Image Source=" D:\Users\Administrator\Documents\Visual Studio 2015\Projects\guestbook\guestbook\xiamu.jpg" Stretch="UniformToFill"/>
+        <TextBox HorizontalAlignment="Center" 
+                 VerticalAlignment="Center"
+                Margin="181,33,155,432" 
+                Width="288" 
+                FontSize="18"
+                Background="{x:Null}" 
+                BorderBrush="{x:Null}"
+                 TextWrapping="Wrap" 
+                 Name="TextBox1"
+            Text="请在第一排输入所要查询的ID或所   要输入的留言并点击对应按钮！" Height="63" 
+                
+            />
+        <TextBox HorizontalAlignment="Center" 
+                 Margin="194,131,135,355" 
+                 Width="295" 
+                 FontSize="18"
+                 Name="guestBox" 
+                 Background="#FFF1E6E6"
+            />
+        <TextBox HorizontalAlignment="Center" 
+                 Margin="194,98,135,395" 
+                 Width="295" 
+                 FontSize="18"
+                 Name="GUESTBox" 
+                 Background="#FFF1E6E6" TextAlignment="Center"
+            >
+            留言内容输入与显示
+        </TextBox>
+        <TextBox HorizontalAlignment="Center" 
+                 Margin="194,173,135,313" 
+                 Width="295" 
+                 FontSize="18"
+                 Name="guest1Box" 
+                 Background="#FFF1E6E6"
+            />
+        <TextBox HorizontalAlignment="Left"
+                  Margin="134,131,0,355" 
+                 BorderBrush="#FFABADB3"
+                 Background="#FFF1E6E6"
+                 Name="idBox" 
+                 Width="60" 
+                 />
+        <TextBox HorizontalAlignment="Center"
+                  Margin="134,98,430,395" 
+                 BorderBrush="#FFABADB3"
+                 Background="#FFF1E6E6"
+                 Name="IDBox" 
+                 Width="60"  FontSize="20" TextAlignment="Center" 
+                 >
+                ID
+        </TextBox>
+        <TextBox HorizontalAlignment="Left"
+                  Margin="134,173,0,313" 
+                 BorderBrush="#FFABADB3"
+                 Background="#FFF1E6E6"
+                 Name="id1Box" 
+                 Width="60" 
+                 >
+        </TextBox>
+        <Button HorizontalContentAlignment="Center"
+                Margin="199,223,189,258"
+                FontSize="18" 
+                Click="Button_Click"
+                >
+            我要留言
+        </Button>
+        <Button HorizontalAlignment="Center"
+                Margin="199,289,189,187" 
+                Width="236" 
+                FontSize="18" Click="Button_Click_1"
+            >
+            查看留言
+        </Button>
+        <Button HorizontalAlignment="Center" 
+                Margin="199,359,189,122" 
+                Width="236" 
+                FontSize="18" 
+                Click="Button_Click_2"
+            >
+            修改留言
+        </Button>
+        <Button HorizontalAlignment="Center" 
+                Margin="199,428,189,52" 
+                Width="236" 
+                FontSize="18" 
+                Click="Button_Click_3" RenderTransformOrigin="0.5,0.5"
+            >
+            删除留言
+        </Button>
+    </Grid>
+</Window>
